@@ -1,0 +1,74 @@
+
+-------------------------------
+|  API IMPLEMENTATION MANUAL  |
+-------------------------------
+
+---------------------------------------------------
+## TABLE OF CONTENTS ##
+	
+ INTRODUCTION API
+
+ SECTION 1 - Status & Constant Declaration
+
+ SECTION 2 - Utilities
+---------------------------------------------------
+
+# SECTION 1 - Status & Constant Declaration
+	- In this section all the common constant variable are declared here,
+	for example Methods, Database Information, Error Responses, and the common HTTP codes.
+	Using APIConstant class to apply this constant to another class.
+
+	Examples: APIConstant::<SEE ABOVE NAME(s)>;
+
+	1. Methods 
+		* METHOD_POST -> POST | APIConstant::METHOD_POST return 'POST' string
+		* METHOD_GET -> GET | APIConstant::METHOD_GET return 'GET' string
+		* METHOD_PUT -> PUT | APIConstant::METHOD_PUT return 'PUT' string
+
+	2. Database Information
+		* DB_HOST
+		* DB_NAME
+		* DB_USERNAME
+		* DB_PASSWORD
+
+	3. Error Responses
+		* EMPTY_PARAMETER -> 'EMPTY PARAMTER'
+		* INVALID_PARAMETER -> 'INVALID PARAMETER USED'
+		* INVALID_DATA_TYPE -> 'INVALID DATA TYPE USED'
+		* SERVER_ERROR -> 'ERROR ON SERVER'
+
+	4. Common HTTP Codes
+		* HTTP_INTERNAL_SERVER_ERROR -> 500
+		* HTTP_BAD_GATEWAY -> 502
+		* HTTP_SERVICE_UNAVAILABLE -> 503
+
+		* HTTP_BAD_REQUEST -> 400
+		* HTTP_UNAUTHORIZED -> 401
+		* HTTP_FORBIDDEN -> 403
+		* HTTP_NOT_FOUND -> 404
+
+		* HTTP_FOUND -> 302
+
+		
+		* HTTP_OK -> 200
+		* HTTP_ACCEPTED -> 202
+
+---------------------------------------------------
+
+---------------------------------------------------
+
+# SECTION 2 - Utilities
+	- In this section all the tools/functions that are common or can be re-use
+	are listed here, like Headers, Method Restriction, etc.
+
+	Example: APIUtilities::<FUNCTION NAME>();
+
+	1. setHeader() -> set the default header of file/api
+	2. setMethod() -> set what method (POST, GET, etc.) to be use inorder to access the file/api
+	3. setResponse(HTTP_CODE, STATUS, RESPONSE/RESULT) -> here are the default return of api as RESTful implementation
+	4. serverTime() -> get the current server time base on the declare timezone
+	5. getUserAgent() -> here we can know what type or what browser that the user used to access our api
+
+---------------------------------------------------	
+
+END

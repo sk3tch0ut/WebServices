@@ -1,0 +1,30 @@
+
+--------------------------------------
+|  API CHANGE LOGS & VERSION CONTROL |
+--------------------------------------
+
+## v1.0.0 ##
+
+[12-09-2016] - Joshua Clifford Reyes
+
+* Changes in ws-v1 index.php
+
+[12-08-2016] - Joshua Clifford Reyes
+
+* Use FileZilla to upload files on webhost000 repository
+* Added Details on manual.txt
+* Structure Started
+	- api
+		- sample.php
+		- all api's are declared here
+	- documentation
+		- logs.txt
+		- manual.txt
+	- libraries
+		- API.php
+		- APIConstant.php
+		- APIException.php
+		- APIStatus.php
+		- APIUtilities.php
+		- APIValidator.php
+* Started the design phase of the ws-v1
