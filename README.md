@@ -1,2 +1,2 @@
 # WebServices
-Libraries for making API RESTful
+Libraries for making API RESTful easy.
