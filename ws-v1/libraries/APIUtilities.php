@@ -57,17 +57,22 @@ class APIUtilities {
 	public static function setMethod($method) {
 
 		if ($_SERVER['REQUEST_METHOD'] != $method) {
-			APIUtilities::setResponse(401, APIStatus::ERROR, 'Method used is not allowed, use '. $method .' instead.');
-			exit(0);
+            APIUtilities::setResponse(
+                APIConstant::HTTP_UNAUTHORIZED, 
+                APIStatus::ERROR, 
+                'Method used is not allowed, use '. $method .' instead.'
+            );
+			
+            exit(0);
 		}
 	}
 
 	/**
-     * API (RESTful) response
-     * @param $http - http code
-     * @param $status - status of the request
-     * @param $response - result data of request
+     * Default API (RESTful) response.
      *
+     * @param int $http - http code
+     * @param string $status - status of the request
+     * @param string $response - result data of request
      * @return json
      */
 	public static function setResponse($http, $status, $response) {
@@ -90,7 +95,7 @@ class APIUtilities {
 	}
 
 	/**
-     * Server Time
+     * Server Time.
      *
      * @return date
      */
@@ -101,8 +106,8 @@ class APIUtilities {
 	}
 
 	/**
-     * Detect current user agent
-     * Code: Time and Space Complexity is O(1)
+     * Detect current user agent.
+     * Time and Space Complexity is O(1).
      *
      * @return string
      */

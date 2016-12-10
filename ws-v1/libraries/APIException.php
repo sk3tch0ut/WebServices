@@ -19,18 +19,21 @@ use \Exception;
 class APIException extends Exception {
 
 	/**
-     *  Exception Error.
-     *  @var string
+     * Exception Error.
+     *
+     * @var string
      */
 	public $error;
 
 	/**
-     *  Exception Error Message.
-     *  @var string
+     * Exception Error Message.
+     *
+     * @var string
      */
 	public $message;
 
 	public function __construct($error, $message) {
+		
 		$this->error = $error;
 		$this->message = $message;
 	}
