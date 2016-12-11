@@ -14,7 +14,7 @@ namespace Libraries;
  * @author Joshua Clifford Reyes
  */
 
-use \Exception;
+use Exception;
 
 class APIException extends Exception {
 

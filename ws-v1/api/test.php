@@ -30,11 +30,11 @@ use Enlighten\Encryption\OpenSSLEncrypter;
 APIUtilities::setHeader();
 APIUtilities::setMethod('GET');
 
-// APIUtilities::setResponse(
-// 	APIConstant::HTTP_OK, 
-// 	APIStatus::SUCCESS, 
-// 	BycryptHasher::make('AKO', 10)
-// );
+APIUtilities::setResponse(
+	APIConstant::HTTP_OK, 
+	APIStatus::SUCCESS, 
+	BycryptHasher::make('AKO', 8)
+);
 
 
 echo '<br>';
@@ -45,9 +45,9 @@ $plainText = 'ANO BANG BAGO?';
 $opensslecrypter = new OpenSSLEncrypter($secretKey, 'AES-256-CTR');
 $encrypted = $opensslecrypter->encrypt($plainText);
 echo $encrypted;
-echo '<br>';
-echo '<br>';
-echo $opensslecrypter->decrypt($encrypted);
-echo '<br>';
+
+$openssldec = new OpenSSLEncrypter($secretKey, 'AES-256-CTR');
+echo $openssldec->decrypt($encrypted);
+
 
 error_reporting(0);

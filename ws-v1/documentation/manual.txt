@@ -11,6 +11,8 @@
  SECTION 1 - Status & Constant Declaration
 
  SECTION 2 - Utilities
+
+ SECTION 3 - Plugins
 ---------------------------------------------------
 
 # SECTION 1 - Status & Constant Declaration
@@ -68,6 +70,12 @@
 	3. setResponse(HTTP_CODE, STATUS, RESPONSE/RESULT) -> here are the default return of api as RESTful implementation
 	4. serverTime() -> get the current server time base on the declare timezone
 	5. getUserAgent() -> here we can know what type or what browser that the user used to access our api
+
+---------------------------------------------------	
+
+---------------------------------------------------
+
+# SECTION 3 - Plugins
 
 ---------------------------------------------------	
 

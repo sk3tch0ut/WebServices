@@ -5,6 +5,22 @@
 
 ## v1.0.0 ##
 
+[12-11-2016] - Joshua Clifford Reyes
+
+* Added structure for Database
+* Added Encryption classes
+* Optimized autoload class
+* Updated Hashing classes
+
+[12-10-2016] - Joshua Clifford Reyes
+
+* Create Hashing classes (BycryptHasher and DefaultHasher with latest industry standard)
+* Create autoload class
+* Added plugins structure
+	- libraries
+		- plugins
+		- ... other main API classes
+
 [12-09-2016] - Joshua Clifford Reyes
 
 * Changes in ws-v1 index.php

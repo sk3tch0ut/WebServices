@@ -14,7 +14,6 @@ namespace Libraries;
  * @author Joshua Clifford Reyes
  */
 
-use Libraries\API;
 use Libraries\APIStatus;
 use Libraries\APIConstant;
 
@@ -86,8 +85,8 @@ class APIUtilities {
             
             'info' => array(	
             	'time' 	  => APIUtilities::serverTime(),
-            	'author'  => API::AUTHOR,
-	            'version' => API::VERSION
+            	'author'  => APIConstant::AUTHOR,
+	            'version' => APIConstant::VERSION
             )
         );
 

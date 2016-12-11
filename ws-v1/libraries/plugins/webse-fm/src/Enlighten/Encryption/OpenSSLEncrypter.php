@@ -110,7 +110,7 @@ class OpenSSLEncrypter {
 	public function decrypt($payload) {
 
 		$payload = json_decode(base64_decode($payload), true);
-		print_r($payload);
+
 		$decrypted = openssl_decrypt($payload['value'], $this->method, $this->key, 0, base64_decode($payload['iv']));
 
 		if ($decrypted === false) {

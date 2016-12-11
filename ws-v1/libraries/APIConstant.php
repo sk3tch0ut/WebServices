@@ -16,6 +16,9 @@ namespace Libraries;
 
 class APIConstant {
 
+	const AUTHOR  = 'RJC';
+	const VERSION = 'v1.0.0';
+
 	##########################################################
 	# METHOD
 	##########################################################

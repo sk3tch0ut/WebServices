@@ -23,7 +23,7 @@ class DefaultHasher {
 	 *
 	 * @var int
 	 */
-	private static $cost = 7;
+	private static $cost = 8;
 
 	/**
 	 * Hash given value.
