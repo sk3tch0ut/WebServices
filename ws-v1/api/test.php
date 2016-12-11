@@ -36,9 +36,6 @@ APIUtilities::setResponse(
 	BycryptHasher::make('AKO', 8)
 );
 
-
-echo '<br>';
-
 $secretKey = 'QUERTY';
 $plainText = 'ANO BANG BAGO?';
 

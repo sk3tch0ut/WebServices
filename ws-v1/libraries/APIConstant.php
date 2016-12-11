@@ -25,6 +25,8 @@ class APIConstant {
 	const METHOD_POST = 'POST';
 	const METHOD_GET = 'GET';
 	const METHOD_PUT = 'PUT';
+	##########################################################
+
 
 	##########################################################
 	# DATABASE
@@ -33,11 +35,15 @@ class APIConstant {
 	const DB_NAME = '';
 	const DB_USERNAME = '';
 	const DB_PASSWORD = '';
+	##########################################################
+
 
 	##########################################################
 	# HEADER
 	##########################################################
 	const HEADER_MAX_AGE = 86400;
+	##########################################################
+
 
 	##########################################################
 	# COMMON ERROR MESSAGE
@@ -46,6 +52,8 @@ class APIConstant {
 	const INVALID_PARAMETER = 'INVALID PARAMETER USED';
 	const INVALID_DATA_TYPE = 'INVALID DATA TYPE USED';
 	const SERVER_ERROR = 'ERROR ON SERVER';
+	##########################################################
+
 
 	########################################################## 
 	# COMMON HTTP CODE 
@@ -64,4 +72,5 @@ class APIConstant {
 	# SUCCESS
 	const HTTP_OK = 200;
 	const HTTP_ACCEPTED = 202;
+	##########################################################
 }

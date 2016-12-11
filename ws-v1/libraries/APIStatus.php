@@ -23,4 +23,5 @@ class APIStatus {
 	const ERROR	 	   = 'ERROR';
 	const FAILED  	   = 'FAILED';
 	const UNAUTHORIZED = 'UNAUTHORIZED';
+	##########################################################
 }
